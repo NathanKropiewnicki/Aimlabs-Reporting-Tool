@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aimlabs Dashboard Login</title>
+</head>
+<body>
+  <h2>Login to View Dashboard</h2>
+  <form onsubmit="login(event)">
+    <input type="password" id="pw" placeholder="Password" />
+    <button type="submit">Login</button>
+  </form>
+
+  <script>
+    const login = (e) => {
+      e.preventDefault();
+      const pw = document.getElementById('pw').value;
+      if (pw === 'dashboard123') {
+        localStorage.setItem('authToken', 'your_secret_token_here');
+        window.location.href = 'dashboard.html';
+      } else {
+        alert('Wrong password');
+      }
+    };
+  </script>
+</body>
+</html>

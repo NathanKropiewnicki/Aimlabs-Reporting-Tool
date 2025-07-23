@@ -5,8 +5,8 @@ import requests
 from datetime import datetime
 
 # Replace with your actual endpoint and API key
-API_ENDPOINT = "https://your-api.com/upload"
-API_KEY = "your_api_key_here"
+API_ENDPOINT = "https://aimlabs-reporting-tool.onrender.com"
+API_KEY = "FMu4-X7bHQ-9lW3acpcGZPgABx8_qjeR8fj5EtKnNjY"
 
 SAVE_DIR = os.path.join(os.getenv("LOCALAPPDATA"), "Aim Lab", "Saved", "SaveGames")
 SEEN_FILES = set()
